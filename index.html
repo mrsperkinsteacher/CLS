@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christian Life Studies — Mrs Perkins</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --blush:#f2d7d5;--sage:#c8d8c8;--sky:#c8d8e8;--lavender:#d8cce8;--peach:#f0dcc8;
+  --warm-white:#faf7f4;--soft-text:#5a4a5a;--mid-text:#8a7a8a;--dark-text:#3a2a3a;
+  --accent:#b89ab0;
+}
+body{font-family:'Source Sans 3',sans-serif;background:var(--warm-white);color:var(--dark-text);min-height:100vh;display:flex;flex-direction:column;}
+
+/* Nav */
+nav{padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(184,154,176,0.2);}
+.nav-home{font-family:'Playfair Display',serif;font-size:15px;color:var(--soft-text);text-decoration:none;font-style:italic;}
+.nav-home:hover{color:var(--accent);}
+.nav-title{font-size:11px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:2px;}
+
+/* Hero */
+.hero{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:4rem 2rem;text-align:center;
+  background:linear-gradient(135deg,var(--sage) 0%,var(--sky) 35%,var(--lavender) 70%,var(--blush) 100%);
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 25% 35%,rgba(255,255,255,0.45) 0%,transparent 55%),
+             radial-gradient(ellipse at 80% 75%,rgba(255,255,255,0.3) 0%,transparent 50%);
+}
+.hero-inner{position:relative;z-index:1;max-width:600px;}
+.eyebrow{font-size:11px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:3px;margin-bottom:1.5rem;}
+.title{font-family:'Playfair Display',serif;font-size:clamp(42px,9vw,110px);font-weight:700;color:var(--dark-text);line-height:0.9;margin-bottom:0.4rem;}
+.title-sub{font-family:'Playfair Display',serif;font-size:clamp(16px,3.5vw,30px);font-style:italic;color:var(--soft-text);margin-bottom:2rem;font-weight:500;}
+.divider{width:50px;height:2px;background:linear-gradient(90deg,var(--accent),transparent);border-radius:2px;margin:0 auto 2rem;}
+.lead{font-size:16px;color:var(--soft-text);line-height:1.8;font-weight:300;max-width:460px;margin:0 auto 2.5rem;}
+
+/* Coming soon card */
+.soon-card{
+  background:rgba(255,255,255,0.65);backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.8);border-radius:16px;
+  padding:2rem 2.5rem;max-width:420px;margin:0 auto;
+}
+.soon-label{font-size:10px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;}
+.soon-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--dark-text);margin-bottom:8px;}
+.soon-text{font-size:13px;color:var(--mid-text);line-height:1.65;font-weight:300;}
+
+footer{padding:2rem;text-align:center;font-size:11px;color:var(--mid-text);letter-spacing:1px;}
+footer a{color:var(--accent);text-decoration:none;}
+footer a:hover{text-decoration:underline;}
+
+@media(max-width:500px){.soon-card{padding:1.5rem;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-home" href="https://mrsperkinsteacher.github.io/">&#8592; Mrs Perkins</a>
+  <span class="nav-title">Christian Life Studies</span>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Mrs Perkins</p>
+    <h1 class="title">Christian</h1>
+    <p class="title-sub">Life Studies</p>
+    <div class="divider"></div>
+    <p class="lead">A space for exploring faith, values, meaning and how we live well with one another.</p>
+    <div class="soon-card">
+      <p class="soon-label">Coming soon</p>
+      <h2 class="soon-title">Resources on their way</h2>
+      <p class="soon-text">Lesson materials, presentations and resources will be added here shortly. Check back soon.</p>
+    </div>
+  </div>
+</div>
+
+<footer>Mrs Perkins &middot; <a href="https://mrsperkinsteacher.github.io/">Back to all subjects</a></footer>
+
+</body>
+</html>
